@@ -1,139 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Ali Essoham</title>
+    <meta charset="UTF-8">
+    <title>Essoham ALI</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            color: #222;
+        }
 
-<style>
-body {
-  font-family: "Times New Roman", Georgia, serif;
-  background-color: #ffffff;
-  color: #000000;
-  margin: 0;
-  padding: 0;
-}
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 30px;
-}
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
 
-header {
-  border-bottom: 2px solid #003366;
-  margin-bottom: 25px;
-}
+        nav {
+            width: 200px;
+            margin-right: 30px;
+        }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
-  color: #003366;
-}
+        nav a {
+            display: block;
+            padding: 12px;
+            margin-bottom: 8px;
+            background-color: #eee;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-header p {
-  margin: 5px 0 15px;
-  font-size: 18px;
-}
+        nav a:hover {
+            background-color: #ddd;
+        }
 
-nav {
-  margin-bottom: 30px;
-}
+        main {
+            flex: 1;
+        }
 
-nav a {
-  margin-right: 20px;
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
-}
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
 
-nav a:hover {
-  text-decoration: underline;
-}
+        h2 {
+            color: #2a7dbb;
+            margin-top: 30px;
+        }
 
-section {
-  margin-bottom: 35px;
-}
+        p {
+            line-height: 1.6;
+        }
 
-section h2 {
-  font-size: 22px;
-  color: #003366;
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 5px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-footer {
-  border-top: 1px solid #cccccc;
-  margin-top: 40px;
-  padding-top: 10px;
-  font-size: 14px;
-  color: #555555;
-}
-</style>
+        .contact strong {
+            display: inline-block;
+            width: 90px;
+        }
+    </style>
 </head>
-
 <body>
+
+<header>
+    <!-- Image panoramique (à remplacer si besoin) -->
+    <img src="panorama.jpg" alt="Panorama côtier">
+</header>
 
 <div class="container">
 
-<header>
-  <h1>Ali Essoham</h1>
-  <p>Poste / Affiliation (Université, Laboratoire)</p>
-</header>
+    <nav>
+        <a href="#">CV</a>
+        <a href="#">RESEARCH</a>
+        <a href="#">TALKS</a>
+        <a href="#">TEACHING</a>
+    </nav>
 
-<nav>
-  <a href="#about">Accueil</a>
-  <a href="#cv">CV</a>
-  <a href="#publications">Publications</a>
-  <a href="#teaching">Enseignement</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <main>
+        <h1>Essoham ALI</h1>
 
-<section id="about">
-  <h2>Présentation</h2>
-  <p>
-    Brève présentation académique (thèmes de recherche, domaine, intérêts).
-  </p>
-</section>
+        <h2>POSITION</h2>
+        <p>
+            Professor at INSA Rennes<br>
+            Member of the Department of Mathematics of INSA Rennes<br>
+            Member of the Mathematics Research Institute of Rennes (IRMAR)
+        </p>
 
-<section id="cv">
-  <h2>Curriculum Vitae</h2>
-  <ul>
-    <li>202X – Poste actuel</li>
-    <li>202X – Doctorat / Master / Formation</li>
-  </ul>
-</section>
+        <h2>CONTACT INFORMATION</h2>
+        <div class="contact">
+            <p><strong>Address</strong><br>
+                INSA de Rennes<br>
+                20 Avenue des Buttes de Coësmes<br>
+                CS 70839<br>
+                35708 Rennes Cedex 7
+            </p>
 
-<section id="publications">
-  <h2>Publications</h2>
-  <ul>
-    <li>Auteur, <em>Titre de l’article</em>, Journal, année.</li>
-    <li>Auteur, <em>Titre de l’article</em>, Journal, année.</li>
-  </ul>
-</section>
-
-<section id="teaching">
-  <h2>Enseignement</h2>
-  <ul>
-    <li>Cours 1 – Université</li>
-    <li>Cours 2 – Université</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>
-    Email : prenom.nom@institution.fr<br>
-    Bureau : …
-  </p>
-</section>
-
-<footer>
-  Dernière mise à jour : 2026
-</footer>
+            <p><strong>Office</strong> 307 (building 2)</p>
+            <p><strong>Email</strong> essoham(dot)ali(at)insa-rennes(dot)fr</p>
+        </div>
+    </main>
 
 </div>
 
