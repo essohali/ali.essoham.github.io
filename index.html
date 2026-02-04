@@ -1,64 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Site personnel – Ali Essoham</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 40px;
-      line-height: 1.7;
-      background-color: #ffffff;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    nav {
-      margin-bottom: 30px;
-    }
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #0066cc;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Ali Essoham</title>
+
+<style>
+body {
+  font-family: "Times New Roman", Georgia, serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+header {
+  border-bottom: 2px solid #003366;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #003366;
+}
+
+header p {
+  margin: 5px 0 15px;
+  font-size: 18px;
+}
+
+nav {
+  margin-bottom: 30px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+section h2 {
+  font-size: 22px;
+  color: #003366;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  border-top: 1px solid #cccccc;
+  margin-top: 40px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #555555;
+}
+</style>
 </head>
 
 <body>
 
+<div class="container">
+
+<header>
+  <h1>Ali Essoham</h1>
+  <p>Poste / Affiliation (Université, Laboratoire)</p>
+</header>
+
 <nav>
-  <a href="index.html">Accueil</a>
+  <a href="#about">Accueil</a>
   <a href="#cv">CV</a>
   <a href="#publications">Publications</a>
+  <a href="#teaching">Enseignement</a>
   <a href="#contact">Contact</a>
 </nav>
 
-<h1>Ali Essoham</h1>
+<section id="about">
+  <h2>Présentation</h2>
+  <p>
+    Brève présentation académique (thèmes de recherche, domaine, intérêts).
+  </p>
+</section>
 
-<p>
-Bienvenue sur mon site personnel.
-</p>
+<section id="cv">
+  <h2>Curriculum Vitae</h2>
+  <ul>
+    <li>202X – Poste actuel</li>
+    <li>202X – Doctorat / Master / Formation</li>
+  </ul>
+</section>
 
-<h2 id="cv">Curriculum Vitae</h2>
-<p>
-(à compléter)
-</p>
+<section id="publications">
+  <h2>Publications</h2>
+  <ul>
+    <li>Auteur, <em>Titre de l’article</em>, Journal, année.</li>
+    <li>Auteur, <em>Titre de l’article</em>, Journal, année.</li>
+  </ul>
+</section>
 
-<h2 id="publications">Publications</h2>
-<ul>
-  <li>Article 1</li>
-  <li>Article 2</li>
-</ul>
+<section id="teaching">
+  <h2>Enseignement</h2>
+  <ul>
+    <li>Cours 1 – Université</li>
+    <li>Cours 2 – Université</li>
+  </ul>
+</section>
 
-<h2 id="contact">Contact</h2>
-<p>
-Email : prenom.nom@exemple.com
-</p>
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Email : prenom.nom@institution.fr<br>
+    Bureau : …
+  </p>
+</section>
+
+<footer>
+  Dernière mise à jour : 2026
+</footer>
+
+</div>
 
 </body>
 </html>
