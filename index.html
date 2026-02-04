@@ -12,22 +12,39 @@
             color: #222;
         }
 
-        /* ===== HEADER IMAGE (STATISTIQUES / PROBABILITÉS) ===== */
-        .hero {
-            height: 280px;                /* hauteur sobre et académique */
-           background-image: url("/panorama.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+        /* ===== TITRE ===== */
+        .site-title {
+            font-size: 36px;
+            font-weight: normal;
+            color: #2a7dbb;
+            max-width: 1200px;
+            margin: 25px auto 15px auto;
+            padding: 0 10px;
         }
 
-        /* ===== LAYOUT ===== */
+        /* ===== IMAGE PANORAMIQUE ===== */
+        .banner {
+            width: 100%;
+            margin-bottom: 30px;
+            border-top: 4px solid #d0d8de;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* ===== LAYOUT PRINCIPAL ===== */
         .container {
             display: flex;
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 0 auto 40px auto;
+            padding: 0 10px;
         }
 
+        /* ===== MENU ===== */
         nav {
             width: 200px;
             margin-right: 30px;
@@ -36,7 +53,7 @@
         nav a {
             display: block;
             padding: 12px;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
             background-color: #eee;
             color: #333;
             text-decoration: none;
@@ -47,18 +64,15 @@
             background-color: #ddd;
         }
 
+        /* ===== CONTENU ===== */
         main {
             flex: 1;
-        }
-
-        h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
         }
 
         h2 {
             color: #2a7dbb;
             margin-top: 30px;
+            font-size: 22px;
         }
 
         p {
@@ -69,14 +83,32 @@
             display: inline-block;
             width: 90px;
         }
+
+        /* ===== RESPONSIVE SIMPLE ===== */
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+
+            nav {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- IMAGE DE HEADER -->
-    <header class="hero"></header>
+    <!-- TITRE -->
+    <h1 class="site-title">Essoham ALI</h1>
 
+    <!-- IMAGE PANORAMIQUE -->
+    <div class="banner">
+        <img src="panorama.jpg" alt="Panorama">
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
     <div class="container">
 
         <nav>
@@ -87,12 +119,10 @@
         </nav>
 
         <main>
-            <h1>Essoham ALI</h1>
-
             <h2>POSITION</h2>
             <p>
                 Lecturer-Researcher at UCO Angers<br>
-                Member of the Institute of Applied Mathematics (MAI) <br>
+                Member of the Institute of Applied Mathematics (MAI)<br>
                 Affiliated Member of the LMBA (CNRS UMR 6205), UBS
             </p>
 
@@ -101,8 +131,8 @@
                 <p>
                     <strong>Address</strong><br>
                     UCO Angers<br>
-                    3 place André Leroy <br>
-                    BP 10808 70839<br>
+                    3 place André Leroy<br>
+                    BP 10808<br>
                     49008 Angers Cedex 1
                 </p>
 
